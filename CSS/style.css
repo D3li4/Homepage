@@ -54,7 +54,7 @@ nav ul li {
     margin-right: 15px;
 }
 
-table, td, th {
+.tMain, table, td, th {
 	border: 2px dotted #4c4c4c;
 	border-collapse: collapse;
 	padding: 10px;
@@ -69,6 +69,17 @@ table, td, th {
 /*.box {
    
 }*/
+
+.me td {
+    border: none;
+    font-size: 26px;
+    padding: 20px;
+}
+
+#me, table {
+    text-align: left;
+    border: none;
+}
 
 #pfp {
     float: left;
@@ -87,8 +98,9 @@ table, td, th {
     margin-top:50px;
 }
 
-.info p {
+.info span {
     display: block;
+    margin: 5px;
 }
 
 .value {
