@@ -11,7 +11,7 @@
     <title>About me</title>
 </head>
 
-<body class="me">
+<body id="dark" class="me">
     <header>
         <h1>Das bin ich</h1>
     </header>
@@ -24,13 +24,16 @@
             <li><a href="bilder.html">Bilder</a></li>
         </ul>
     </nav>
+
+    <button id="dark_mode">Dark Mode</button>
+
     <div class="box">
         <div id="pfp">
             <a href="https://www.artstation.com/artwork/481Bkn" target="_blank">
-            <img class="artist" src="../img/alyssa-nizio.jpg" alt="Anime Bild">
+                <img class="artist" src="../img/alyssa-nizio.jpg" alt="Anime Bild">
             </a>
         </div>
-    
+
         <table id="me">
             <tbody>
                 <tr>
@@ -51,13 +54,15 @@
                 </tr>
                 <tr>
                     <td>Berufliche Bildung:</td>
-                    <td>In einer Zweitausbildung zur Informatikerin mit Fachrichtung Applikationsentwicklung. Davor habe ich
+                    <td>In einer Zweitausbildung zur Informatikerin mit Fachrichtung Applikationsentwicklung. Davor habe
+                        ich
                         die Ausbildung zur Elektroinstallateurin EFZ abgeschlossen.</td>
                 </tr>
             </tbody>
         </table>
 
     </div>
+    <script src="../scripts/dark_mode.js"></script>
 </body>
 
 </html>
