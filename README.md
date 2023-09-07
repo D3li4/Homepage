@@ -64,7 +64,7 @@ I appreciate any contributions, whether it's bug fixes, design enhancements, or 
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE.txt) file for details.
 
 ---
 
