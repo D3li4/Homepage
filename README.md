@@ -51,7 +51,7 @@ To explore and contribute to this project, follow these simple steps:
 2. Navigate to the project directory:
 
    ```bash
-   cd homepage-project
+   cd Homepage
    ```
 
 3. Open the `index.html` file in your preferred web browser to view the homepage.
