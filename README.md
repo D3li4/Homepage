@@ -32,11 +32,16 @@ This project is all about crafting a personalized online space that reflects who
 
 I'm harnessing the power of the following technologies to bring this project to life:
 
-- **HTML**: The backbone of web development, providing structure and content to my homepage.
+- **HTML:** The backbone of web development, providing structure and content to my homepage.
 
-- **CSS**: Adding style, beauty, and responsiveness to make the page visually appealing and accessible on different devices.
+- **CSS:** Adding style, beauty, and responsiveness to make the page visually appealing and accessible on different devices.
 
-- **JavaScript**: Adding interactivity and dynamic elements to engage visitors and enhance the user experience.
+- **JavaScript:** Adding interactivity and dynamic elements to engage visitors and enhance the user experience.
+
+- **Three.js:** Three.js is a lightweight cross-browser JavaScript library/API used to create and display animated 3D computer graphics on a Web browser. Three.js scripts may be used in conjunction with the HTML5 canvas element, SVG or WebGL.  
+[Here](https://threejs.org/docs/index.html#manual/en/introduction/Creating-a-scene) is the Documentation.
+
+
 
 ## Getting Started
 
