@@ -1,3 +1,9 @@
+@property --glow-color {
+    syntax: "<color>";
+    inherits: false;
+    initial-value: hsl(0, 0%, 0%);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -40,6 +46,7 @@ body {
     padding-left: 30px;
     padding-right: 30px;
     background-color: #460d46;
+
 }
 
 nav {
@@ -86,13 +93,77 @@ th {
 table {
     text-align: left;
     border: none;
+    margin-left: 60px;
 }
 
 #pfp {
     float: left;
-    margin: 50px;
-    padding: 50px;
+    margin: 70px;
+    padding: 0px;
     margin-right: 10px;
+    box-shadow: 0 0 10px 8px #c000c0;
+}
+
+.glowing-button {
+    margin-top: 25px;
+    margin-bottom: 60px;
+    position: relative;
+    color: var(--glow-color);
+    cursor: pointer;
+    padding: 0.35em 1em;
+    border: 0.15em solid var(--glow-color);
+    border-radius: 0.45em;
+    background: none;
+    perspective: 2em;
+    font-family: "Raleway", sans-serif;
+    font-size: 1.2em;
+    font-weight: 900;
+    letter-spacing: 1em;
+
+    -webkit-box-shadow: inset 0px 0px 0.5em 0px var(--glow-color),
+        0px 0px 0.5em 0px var(--glow-color);
+    -moz-box-shadow: inset 0px 0px 0.5em 0px var(--glow-color),
+        0px 0px 0.5em 0px var(--glow-color);
+    box-shadow: inset 0px 0px 0.5em 0px var(--glow-color),
+        0px 0px 0.5em 0px var(--glow-color);
+}
+
+.glowing-button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0.7;
+    filter: blur(1em);
+    transform: translateY(120%) rotateX(95deg) scale(1, 0.35);
+    background: var(--glow-color);
+    pointer-events: none;
+}
+
+.glowing-button::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    z-index: -1;
+    background-color: var(--glow-color);
+    box-shadow: 0 0 2em 0.2em var(--glow-color);
+    transition: opacity 100ms linear;
+}
+
+.glowing-button:hover {
+    color: rgba(0, 0, 0, 0.8);
+    text-shadow: none;
+    animation: none;
+}
+
+.glowing-button:hover:after {
+    opacity: 1;
 }
 
 .info {
@@ -133,6 +204,10 @@ img.artist {
     height: 400px;
 }
 
+.container {
+    display: wrap;
+}
+
 /*Tabellen seite*/
 
 table {
@@ -143,3 +218,8 @@ table {
     margin-top: 50px;
 }
 
+
+/* Still not working... */
+.cursor {
+    cursor: url('../img/cursor.png');
+}
